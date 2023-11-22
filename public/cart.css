@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
+body {
+  font-family: "Baloo Bhaina 2", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+nav {
+  background-color: #0e0f0f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 3px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  line-height:1.7;
+  padding-bottom: 10px;
+}
+.logo img {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover,
+a.active {
+  text-decoration: underline;
+  color: #fe7d00;
+}
+
+.profile {
+position: relative;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.profile a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+.profile img {
+  width: 40px;
+  padding: 13px 0 0;
+
+}
+.profile:hover {
+  color: #fe7d00;
+  transform: scale(1.15);
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+.cart img{
+  width: 40px;
+  padding: 13px 0 0;
+}
+.personal{
+ display: flex;
+}
+
+/* main */
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 40px;
+}
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+header .shopping img{
+    width: 40px;
+}
+header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-top: 50px;
+    align-items: center;
+}
+.list .item{
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+.list .item img{
+    width: 300px;
+    height: 390px;
+    object-fit: cover;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 510px;
+    background-color: #453E3B;
+    height: 80vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 90px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+
+
+
+ 
